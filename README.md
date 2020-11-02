@@ -1,5 +1,5 @@
   # HORSE RACE
   ---
-  ![Screenshot](docs/img/index-mobile.png)
+  <img src="docs/img/index-mobile.png" width="450" height="800"/>
 
-  ![Screenshot](docs/img/mobile.png)
+  <img src="docs/img/mobile.png" width="1000" height="630"/>
