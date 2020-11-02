@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <meta charset="utf-8">
+  <link rel="icon" href="../icons/favicon.ico" type="image/x-icon" />
+  <meta name="description" content="Bet on the fastest horse against your friends!">
+  <!-- META tag to scale viewport to fit any screen, and user-scalable=no to lock users from zooming -->
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#E9967A">
+  <!-- PWA -->
+  <link rel="manifest" href="../manifest.json">
+  <meta name="name=screen-orientation" content="landscape">
+  <!-- iOS meta tags and icons-->
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Horse Race">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- status bar displaying hour, battery, etc -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- iOS -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/dist/index.css">
+  <!-- Vendor CSS -->
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+
+  <title>Horse Race</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-content-container">
+      <h1 class="game-title">Horse Race</h1>
+    </div>
+    <div class="bottom-content-container">
+      <!-- TODO: decide if one can change amount of racing horses -->
+
+      <div class="mode-button-container">
+        <button type="button" name="change-mode" onclick="switchMode()">Links Down</button>
+      </div>
+
+      <div class="play-button-container">
+        <button type="button" name="play-button" onclick="startGame()">Play</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../js/index.js"></script>
+  <script type="text/javascript" src="../js/utils.js"></script>
+  <script>
+    // if ('serviceWorker' in navigator) {
+    //   window.addEventListener('load', () => {
+    //     navigator.serviceWorker.register("{{ url_for('.sw') }}", {
+    //       scope: './'
+    //     })
+    //       .then(function(registration) {
+    //         console.log('Registration successful, scope is:', registration.scope);
+    //       })
+    //       .catch(function(error) {
+    //         console.log('Service worker registration failed, error:', error);
+    //       });
+    //   })
+    // }
+  </script>
+  </script>
+</body>
+</html>

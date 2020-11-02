@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="icon" href="../icons/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <link rel="stylesheet" href="../css/dist/game.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div class="game-container">
+
+      <div class="top-nav">
+
+        <div class="sound-button-container">
+          <button type="button" onclick="window.location.href='./index.html'" name="back-button" class="material-icons dp48">keyboard_backspace</button>
+        </div>
+        <div class="link-counter-container">
+          <h1 class="link-counter">0/5</h1>
+        </div>
+        <div class="cards-left-container">
+          <h1 class="cards-left">52</h1>
+        </div>
+        <div class="settings-button-container">
+          <button type="button" name="settings-button" class="material-icons dp48">settings</button>
+        </div>
+        <div class="sound-button-container">
+          <button type="button" name="sound-button" class="material-icons dp48">volume_off</button>
+        </div>
+      </div>
+
+      <div class="game-table">
+        <div class="topcards-container">
+
+          <div class="draw-pile-container">
+            <div class="draw-pile">
+              <div class="draw-card is-face-down">
+                <div class="vertical-face-down"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- link cards -->
+
+        </div>
+
+      </div>
+    </div>
+  <script src="../js/render.js"></script>
+  <script src="../js/cards.js"></script>
+  <script src="../js/game.js"></script>
+  <script src="../js/utils.js">
+
+  </script>
+  <script type="text/javascript">
+    document.querySelector('[name=sound-button]').onclick = function () {
+      if (this.innerText == 'volume_off') {
+        this.innerText = 'volume_up'
+      } else {
+        this.innerText = 'volume_off'
+      }
+    }
+  </script>
+  </body>
+</html>

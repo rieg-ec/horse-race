@@ -1,0 +1,261 @@
+/* most smartphones */
+@media (orientation: portrait) and (min-aspect-ratio: 281/653) {
+
+  #winner-h1 {
+    font-size: 40px;
+  }
+
+  .winner-header {
+    font-size: 40px;
+  }
+
+  .em.em-tada {
+    margin: 0 20px;
+    font-size: 25px;
+  }
+
+  button {
+    width: 40vw;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 3px 0px rgba(166, 87, 12, 1), 3px 8px 3px 3px rgba(0, 0, 0, 0.1);
+    background-color: SandyBrown;
+    font-family: var(--font-ff-1);
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+}
+
+/* Galaxy fold and taller */
+@media (orientation: portrait) and (max-aspect-ratio: 280/653) {
+
+    #winner-h1 {
+      font-size: 35px;
+    }
+
+    .winner-header {
+      font-size: 35px;
+    }
+
+    .em.em-tada {
+      margin: 0 20px;
+      font-size: 20px;
+    }
+
+    button {
+      width: 40vw;
+      height: 40px;
+      border-radius: 25px;
+      box-shadow: 0px 5px 3px 0px rgba(166, 87, 12, 1), 3px 8px 3px 3px rgba(0, 0, 0, 0.1);
+      background-color: SandyBrown;
+      font-family: var(--font-ff-1);
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+
+
+/* desktop screens and ipads in portrait*/
+@media (orientation: portrait) and (min-width: 768px) {
+
+    #winner-h1 {
+      font-size: 60px;
+    }
+
+    .winner-header {
+      font-size: 60px;
+    }
+
+    .em.em-tada {
+      margin: 0 30px;
+      font-size: 35px;
+    }
+
+    button {
+      width: 30vw;
+      height: 60px;
+      margin: 0 20px;
+      border-radius: 25px;
+      box-shadow: 0px 8px 5px 0px rgba(166, 87, 12, 1), 5px 15px 5px 3px rgba(0, 0, 0, 0.1);
+      background-color: SandyBrown;
+      font-family: var(--font-ff-1);
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+
+/* most smartphones on landscape */
+@media (orientation: landscape) and (max-aspect-ratio: 652/280) and (max-width: 1024px) {
+  #winner-h1 {
+    font-size: 40px;
+  }
+
+  .winner-header {
+    font-size: 40px;
+  }
+
+  .em.em-tada {
+    margin: 0 20px;
+    font-size: 25px;
+  }
+
+  button {
+    width: 20vw;
+    height: 40px;
+    margin: 0 20px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 5px 0px rgba(166, 87, 12, 1), 5px 15px 5px 3px rgba(0, 0, 0, 0.1);
+    background-color: SandyBrown;
+    font-family: var(--font-ff-1);
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+
+/* Galaxy Fold and taller */
+@media (orientation: landscape) and (min-aspect-ratio: 653/280) and (max-width: 1024px) {
+  #winner-h1 {
+    font-size: 30px;
+  }
+
+  .winner-header {
+    font-size: 30px;
+  }
+
+  .em.em-tada {
+    margin: 0 20px;
+    font-size: 20px;
+  }
+
+  button {
+    width: 20vw;
+    height: 40px;
+    margin: 0 20px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 5px 0px rgba(166, 87, 12, 1), 5px 15px 5px 3px rgba(0, 0, 0, 0.1);
+    background-color: SandyBrown;
+    font-family: var(--font-ff-1);
+    font-size: 10px;
+    font-weight: bold;
+  }
+}
+
+
+/* ultra-wide screens */
+@media (orientation: landscape) and (min-width: 1024px) {
+  #winner-h1 {
+    font-size: clamp(40px, 8vw, 100px);
+  }
+
+  .winner-header {
+    font-size: clamp(40px, 8vw, 100px);
+  }
+
+  .em.em-tada {
+    margin: 0 40px;
+    font-size: clamp(30px, 4vw, 60px);
+  }
+
+  button {
+    width: 250px;
+    height: 60px;
+    margin: 0 20px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 5px 0px rgba(166, 87, 12, 1), 5px 15px 5px 3px rgba(0, 0, 0, 0.1);
+    background-color: SandyBrown;
+    font-family: var(--font-ff-1);
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+}
+
+:root {
+  /* Fonts */
+  --font-ff-1: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  top: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: var(--font-ff-1);
+}
+
+button {
+  outline: none;
+}
+
+button:active {
+  transform: translateY(4px);
+}
+
+
+button:active {
+  transform: translateY(4px);
+  filter: brightness(120%);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: BurlyWood;
+}
+
+.winner-container {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.winner-suit {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-options-container {
+  flex-grow: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-again-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.back-to-menu-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10px;
+}
