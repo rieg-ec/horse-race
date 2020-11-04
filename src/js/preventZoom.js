@@ -14,5 +14,3 @@ document.addEventListener('gestureend', (e) => {
   e.preventDefault();
   document.body.style.zoom = 0.99;
 });
-
-// TODO: is adding this file outside vue app the best way? how to minify?
