@@ -4,10 +4,10 @@ const postcss = require('gulp-postcss');
 const postcssurl = require('postcss-url');
 const path = require('path');
 
-const outDir = './src/css/dist'
+const outDir = './app/css/dist'
 
 gulp.task('default', () => {
-  return gulp.src('./src/css/*.css')
+  return gulp.src('./app/css/*.css')
     .pipe(postcss([
             autoprefixer(),
             postcssurl({
