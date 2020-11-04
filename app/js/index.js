@@ -7,7 +7,7 @@ function startGame () {
   window.localStorage.setItem('n_of_players', '4')
   window.localStorage.setItem('links_size', '6')
   window.localStorage.setItem('track_size', '7')
-  window.location.href = './game.html'
+  window.location.href = './html/game.html'
 }
 
 function switchMode () {

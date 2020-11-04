@@ -2,7 +2,7 @@ let suits = {'s': 'SPADES', 'c': 'CLUBS', 'h': 'HEARTS', 'd': 'DIAMONDS'}
 // winner retrieved from localStorage
 let winner_ls = window.localStorage.getItem('winner')
 if (winner_ls == undefined) {
-  window.location.href = '../html/index.html'
+  window.location.href = '../index.html'
 }
 window.localStorage.removeItem('winner')
 let winner = suits[winner_ls]
@@ -14,5 +14,5 @@ document.querySelector('button[name="play-again"]').onclick = () => {
 }
 
 document.querySelector('button[name="back-to-menu"]').onclick = () => {
-  window.location.href = '../html/index.html'
+  window.location.href = '../index.html'
 }
